@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Pizzeria AGP</h1>
+
+        <label for="pizza">Selecciona tu pizza de elección:</label>
+        <select id="pizza">
+            <option value="14000">Hawaiana - $14.000</option>
+            <option value="16000">Jamón y Queso - $16.000</option>
+            <option value="20000">Especial - $20.000</option>
+            <option value="25000">Mexicana - $25.000</option>
+            <option value="25000">Ranchera - $25.000</option>
+            <option value="30000">Pollo con champiñones - $30.000</option>
+        </select>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" value="1" min="1">
+
+        <h2>Ingredientes Extras:</h2>
+        <label>
+            <input type="checkbox" value="2000"> Piña - $2.000
+        </label><br>
+        <label>
+            <input type="checkbox" value="5000"> Queso - $5.000
+        </label><br>
+        <label>
+            <input type="checkbox" value="3000"> Jamón - $3.000
+        </label><br>
+        <label>
+            <input type="checkbox" value="5000"> Carne Desmechada - $5.000
+        </label><br>
+        <label>
+            <input type="checkbox" value="5000"> Chorizo - $5.000
+        </label><br>
+        <label>
+            <input type="checkbox" value="4000"> Salchicha - $4.000
+        </label><br>
+        <label>
+            <input type="checkbox" value="5000"> Pollo - $5.000
+        </label><br>
+        <label>
+            <input type="checkbox" value="4000"> champiñones - $4.000
+        </label><br>
+
+        <button id="calcular">Calcular Total</button>
+
+        <h2>Resumen de tu Pedido:</h2>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="../JavaScript/index.js"></script>
+</body>
+</html>
